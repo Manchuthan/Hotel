@@ -132,7 +132,7 @@ function TiltCard({ title, subtitle, image, speed = 0.15 }: { title: string; sub
 export default function Highlights() {
   return (
     <section className="mt-6 px-4">
-      <h2 className="font-serif text-lg mb-2">Highlights</h2>
+      <h2 className="font-serif text-lg mb-2">Outlets</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
         {OUTLETS.map((h, i) => (
           <TiltCard key={h.title} {...h} speed={[0.12, 0.18, 0.1, 0.16][i % 4]} />
