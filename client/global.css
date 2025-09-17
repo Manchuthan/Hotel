@@ -1,0 +1,116 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@400&family=Open+Sans:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    /* Araliya brand palette in HSL */
+    --araliya-beige: 36 33% 96%;
+    --araliya-sand: 33 35% 80%;
+    --araliya-gold: 37 38% 47%;
+    --araliya-forest: 156 28% 18%;
+    --araliya-ocean: 190 60% 36%;
+
+    --background: var(--araliya-beige);
+    --foreground: 24 15% 18%;
+
+    --card: var(--araliya-beige);
+    --card-foreground: 24 15% 18%;
+
+    --popover: var(--araliya-beige);
+    --popover-foreground: 24 15% 18%;
+
+    --primary: var(--araliya-gold);
+    --primary-foreground: 36 100% 98%;
+
+    --secondary: var(--araliya-ocean);
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 36 20% 92%;
+    --muted-foreground: 24 12% 35%;
+
+    --accent: var(--araliya-forest);
+    --accent-foreground: 36 100% 98%;
+
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 36 100% 98%;
+
+    --border: 33 20% 85%;
+    --input: 33 20% 85%;
+    --ring: var(--araliya-gold);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: var(--araliya-beige);
+    --sidebar-foreground: 24 15% 18%;
+    --sidebar-primary: var(--araliya-gold);
+    --sidebar-primary-foreground: 36 100% 98%;
+    --sidebar-accent: 36 20% 92%;
+    --sidebar-accent-foreground: 24 15% 18%;
+    --sidebar-border: 33 20% 85%;
+    --sidebar-ring: var(--araliya-gold);
+  }
+
+  .dark {
+    --background: 156 28% 10%;
+    --foreground: 36 33% 96%;
+
+    --card: 156 28% 12%;
+    --card-foreground: 36 33% 96%;
+
+    --popover: 156 28% 12%;
+    --popover-foreground: 36 33% 96%;
+
+    --primary: var(--araliya-gold);
+    --primary-foreground: 36 100% 98%;
+
+    --secondary: var(--araliya-ocean);
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 156 20% 18%;
+    --muted-foreground: 36 20% 85%;
+
+    --accent: var(--araliya-forest);
+    --accent-foreground: 36 100% 98%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 36 100% 98%;
+
+    --border: 156 15% 22%;
+    --input: 156 15% 22%;
+    --ring: var(--araliya-gold);
+    --sidebar-background: 156 28% 10%;
+    --sidebar-foreground: 36 33% 96%;
+    --sidebar-primary: var(--araliya-gold);
+    --sidebar-primary-foreground: 36 100% 98%;
+    --sidebar-accent: 156 20% 18%;
+    --sidebar-accent-foreground: 36 33% 96%;
+    --sidebar-border: 156 15% 22%;
+    --sidebar-ring: var(--araliya-gold);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: "Cinzel Decorative", serif;
+  }
+  h4, h5, h6 {
+    font-family: "Cinzel", serif;
+  }
+}
