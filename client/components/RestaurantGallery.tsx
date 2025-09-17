@@ -10,7 +10,7 @@ export default function RestaurantGallery() {
     },
     {
       src: r2,
-      alt: "Fine sofa setup",
+      alt: "Luxe Lounge Setup",
     },
     {
       src: r3,
@@ -18,7 +18,7 @@ export default function RestaurantGallery() {
     },
     {
       src: r4,
-      alt: "Juice place",
+      alt: "The Juice Hub",
     },
   ];
 
