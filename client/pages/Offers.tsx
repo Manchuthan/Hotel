@@ -71,14 +71,13 @@ export const OFFERS: OfferItem[] = [
     color: "from-[hsl(var(--araliya-forest))]",
   },
   {
-  id: "o3",
-  title: "Beach Dine",
-  subtitle: "Beautiful beach setup – 20% off this week!",
-  category: "dining3",
-  image: of2,
-  color: "from-[hsl(var(--araliya-gold))]",
-}
-
+    id: "o3",
+    title: "Beach Dine",
+    subtitle: "Beautiful beach setup – 20% off this week!",
+    category: "dining3",
+    image:of2,
+    color: "from-[hsl(var(--araliya-gold))]",
+  },
   {
     id: "o4",
     title: "Family Brunch",
