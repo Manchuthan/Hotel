@@ -56,7 +56,7 @@ export const OFFERS: OfferItem[] = [
     
     id: "o1",
     title: "International Dinner Buffet",
-    subtitle: "International Dinner Buffet• Save 25% OFF on selected beverages",
+    subtitle: "International Dinner Buffet• Save 15% OFF on selected beverages",
     category: "dining1",
     image:of15,
     color: "from-[hsl(var(--araliya-ocean))]",
